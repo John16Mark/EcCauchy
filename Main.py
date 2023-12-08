@@ -106,12 +106,12 @@ def login():
         menorY=circulo_imaginaria-radio
     if(circulo_imaginaria+radio > mayorY):
         mayorY=circulo_imaginaria+radio
-
+    """
     print("Menor en X:", menorX)
     print("Mayor en X:", mayorX)
     print("Menor en Y:", menorY)
     print("Mayor en Y:", mayorY)
-
+    """
     LatexFuncion = interFuncion.get()
     tokens=[]
     estado=0
@@ -164,8 +164,8 @@ def login():
                 i-=1
         i+=1
     lat=""
-    for t in tokens:
-        print("token",t)
+    #for t in tokens:
+        #print("token",t)
 
 
             
@@ -184,7 +184,6 @@ def login():
     ax.set_xlim(float(menorX-1), float(mayorX+1))
     ax.set_ylim(float(menorY-1), float(mayorY+1))
     ax.grid(True)
-    ax.legend()
     ax.add_patch(PlotCirculo)
 
     plt.show()
